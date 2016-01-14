@@ -16,3 +16,10 @@ holiday_dates = as.Date(holidays, "%d-%m-%Y")
 holiday_yday = yday(holiday_dates)
 
 holiday_xreg = get_holiday_xreg(holiday_yday)
+
+rangetag <- function(min, max, value){
+  if(value>=min & value<=max)
+    return(1)
+  else
+    return(0)
+}
