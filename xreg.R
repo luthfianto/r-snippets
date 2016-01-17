@@ -1,7 +1,7 @@
 # Snippets for building External Regressors
 
 # Create a vector for a holiday
-holiday_vector <- function(nth_day, days_in_year=365) {
+get_holiday_vector <- function(nth_day, days_in_year=365) {
   zeroes = rep(0, days_in_year)
   zeroes[nth_day] = 1
   return(zeroes)
